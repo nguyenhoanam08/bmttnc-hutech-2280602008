@@ -1,0 +1,7 @@
+def dao_nguoc_list(list):
+    return list[::-1]
+
+input_list = input("Nhap danh sach cac so, cach nhau bang dau phay: ")
+numbers = list(map(int, input_list.split(',')))
+list_dao_nguoc = dao_nguoc_list(numbers)
+print("list sau khi dao nguoc:", list_dao_nguoc)
